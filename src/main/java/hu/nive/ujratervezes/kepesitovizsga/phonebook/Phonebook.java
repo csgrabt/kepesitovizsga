@@ -14,18 +14,13 @@ public class Phonebook {
     public void exportPhonebook(Map<String, String> contacts, String outputPath) {
         validator(contacts, outputPath);
 
-
         Path pathOfFile = Path.of(outputPath);
 
         try (BufferedWriter br = Files.newBufferedWriter(pathOfFile, StandardCharsets.UTF_8)) {
             writingFile(contacts, br);
-
-
         } catch (IOException ioe) {
             throw new IllegalArgumentException("Something went wrong while writing the file!", ioe);
-
         }
-
     }
 
     private void writingFile(Map<String, String> contacts, BufferedWriter br) throws IOException {
@@ -38,7 +33,7 @@ public class Phonebook {
 
     private void validator(Map<String, String> contacts, String outputPath) {
         if (contacts == null || outputPath == null) {
-            throw new IllegalArgumentException("Contacts or (and) outputPath is null!");
+            throw new IllegalArgumentException("Contacts or/and outputPath is/are null!");
         }
     }
 }
