@@ -6,9 +6,8 @@ public class AddDigits {
             return -1;
         }
         int counter = 0;
-        char[] array = input.toCharArray();
 
-        for (Character item : array
+        for (Character item : input.toCharArray()
         ) {
             if (Character.isDigit(item)) {
                 counter += Character.getNumericValue(item);
