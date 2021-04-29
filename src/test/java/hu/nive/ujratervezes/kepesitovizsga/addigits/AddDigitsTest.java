@@ -1,4 +1,4 @@
-/*package hu.nive.ujratervezes.kepesitovizsga.addigits;
+package hu.nive.ujratervezes.kepesitovizsga.addigits;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -64,4 +64,4 @@ class AddDigitsTest {
         assertEquals(15, digitAdder.addDigits("5-55"));
     }
 
-}*/
+}
