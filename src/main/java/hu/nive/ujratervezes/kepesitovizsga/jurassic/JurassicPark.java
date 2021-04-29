@@ -35,7 +35,5 @@ public class JurassicPark {
         }
         return names;
     }
-
-
 }
 
